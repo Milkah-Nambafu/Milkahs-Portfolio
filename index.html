@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milkah Nambafu — Tailoring & Creative Portfolio</title>
+  <meta name="description" content="Personal portfolio of Milkah Nambafu. Tailoring & garment design, digital technology, and creative exploration. Minimalist design with a street-art soul.">
+  <meta name="theme-color" content="#0d0e11">
+
+  <!-- Google Fonts: Modern Grotesque + Graffiti Marker Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Subtle Street-Art SVG Filter Definition for spray/rough paper edge -->
+  <svg class="svg-filters" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1">
+    <defs>
+      <filter id="spray-filter" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G" />
+      </filter>
+    </defs>
+  </svg>
+
+  <!-- Ambient Background Grain Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- SKIP TO CONTENT (Accessibility) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- =========================================================================
+       NAVIGATION HEADER
+       ========================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" aria-label="Milkah Nambafu Portfolio Homepage">
+        <span class="brand-tag">MILKAH</span>
+        <span class="brand-accent">//</span>
+        <span class="brand-sub">STUDIO</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">What I Do</a></li>
+          <li><a href="#work" class="nav-link">My Work</a></li>
+          <li><a href="#journey" class="nav-link">My Journey</a></li>
+          <li><a href="#contact" class="nav-link nav-link--cta">Let's Connect <span class="arrow-glyph" aria-hidden="true">↗</span></a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <div class="mobile-menu-meta">
+          <span class="tape-badge">NAVIGATION // V1.0</span>
+        </div>
+        <ul class="mobile-links">
+          <li><a href="#hero" class="mobile-link"><span class="link-num">01</span> Home</a></li>
+          <li><a href="#about" class="mobile-link"><span class="link-num">02</span> About Me</a></li>
+          <li><a href="#services" class="mobile-link"><span class="link-num">03</span> What I Do</a></li>
+          <li><a href="#work" class="mobile-link"><span class="link-num">04</span> Portfolio</a></li>
+          <li><a href="#journey" class="mobile-link"><span class="link-num">05</span> Journey</a></li>
+          <li><a href="#contact" class="mobile-link mobile-link--accent"><span class="link-num">06</span> Contact Me</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+          <p class="tag-caption">Creativity in every stitch • Ideas without limits</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       MAIN CONTENT
+       ========================================================================= -->
+  <main id="main-content">
+
+    <!-- -----------------------------------------------------------------------
+         HERO SECTION
+         ----------------------------------------------------------------------- -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        
+        <!-- Left Column: Copy & CTAs -->
+        <div class="hero-content">
+          <!-- Availability Pill -->
+          <div class="status-pill fade-in">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span class="status-text">AVAILABLE FOR CREATIVE &amp; DIGITAL PROJECTS</span>
+          </div>
+
+          <!-- Name & Tag -->
+          <div class="hero-identity fade-in">
+            <span class="pre-title">Hello, my name is</span>
+            <!-- EDITABLE PLACEHOLDER: Update name if desired -->
+            <h1 class="hero-name">
+              Milkah <span class="graffiti-highlight">Nambafu</span>
+              <svg class="crown-doodle" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M10 32 L20 12 L45 26 L55 6 L65 26 L90 12 L100 32 Z" stroke="var(--color-accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="20" cy="8" r="3" fill="var(--color-accent)" />
+                <circle cx="55" cy="3" r="3" fill="var(--color-accent)" />
+                <circle cx="90" cy="8" r="3" fill="var(--color-accent)" />
+              </svg>
+            </h1>
+          </div>
+
+          <!-- Bold Headline -->
+          <div class="hero-statement fade-in">
+            <h2 class="hero-headline">
+              “CREATIVITY IN <span class="marker-box">EVERY STITCH.</span><br>
+              IDEAS <span class="graffiti-word">WITHOUT LIMITS.”</span>
+            </h2>
+          </div>
+
+          <!-- Short Personal Description -->
+          <p class="hero-lead fade-in">
+            Passionate about the craftsmanship of <strong>tailoring &amp; garment creation</strong>, 
+            the power of <strong>digital technology</strong>, and the pursuit of continuous growth. 
+            Bridging hands-on precision with forward-thinking digital creativity.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions fade-in">
+            <a href="#work" class="btn btn--primary">
+              <span>Explore My Work</span>
+              <svg class="btn-arrow" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn--outline">
+              <span>Contact Me</span>
+              <svg class="btn-arrow" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Street Art Accent Arrow Doodle pointing down -->
+          <div class="doodle-note fade-in" aria-hidden="true">
+            <svg class="arrow-doodle" viewBox="0 0 120 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 15 C 45 5, 85 10, 85 45 C 85 55, 75 60, 65 52 C 55 42, 60 25, 75 35 C 90 45, 95 58, 98 62" stroke="var(--color-accent)" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+              <path d="M88 58 L98 63 L105 52" stroke="var(--color-accent)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="handwritten-caption">scroll to discover</span>
+          </div>
+        </div>
+
+        <!-- Right Column: Visual Minimalist-Street Art Composition -->
+        <div class="hero-visual fade-in" aria-hidden="true">
+          <div class="street-card">
+            <!-- Tape Corner Effect -->
+            <div class="tape-strip top-right"></div>
+            <div class="tape-strip bottom-left"></div>
+
+            <!-- Card Header -->
+            <div class="street-card-header">
+              <span class="terminal-dot red"></span>
+              <span class="terminal-dot yellow"></span>
+              <span class="terminal-dot green"></span>
+              <span class="card-id">SPEC // MK-2026</span>
+            </div>
+
+            <!-- Central Artwork / Minimalist Street Art Badge -->
+            <div class="street-card-art">
+              <!-- Geometric Tailoring & Street Tag SVG Illustration -->
+              <svg class="card-svg" viewBox="0 0 320 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Grid background lines -->
+                <line x1="20" y1="40" x2="300" y2="40" stroke="rgba(255,255,255,0.08)" stroke-dasharray="4 4" />
+                <line x1="20" y1="140" x2="300" y2="140" stroke="rgba(255,255,255,0.08)" stroke-dasharray="4 4" />
+                <line x1="20" y1="240" x2="300" y2="240" stroke="rgba(255,255,255,0.08)" stroke-dasharray="4 4" />
+                <line x1="60" y1="20" x2="60" y2="260" stroke="rgba(255,255,255,0.08)" stroke-dasharray="4 4" />
+                <line x1="160" y1="20" x2="160" y2="260" stroke="rgba(255,255,255,0.08)" stroke-dasharray="4 4" />
+                <line x1="260" y1="20" x2="260" y2="260" stroke="rgba(255,255,255,0.08)" stroke-dasharray="4 4" />
+                
+                <!-- Tailoring measuring tape & scissors geometry -->
+                <circle cx="160" cy="130" r="85" stroke="var(--color-border-bright)" stroke-width="1.5" />
+                <circle cx="160" cy="130" r="60" stroke="var(--color-accent)" stroke-width="1.5" stroke-dasharray="6 3" />
+                
+                <!-- Stylized Scissors/Crosshair Silhouette -->
+                <path d="M110 80 L210 180" stroke="var(--color-text)" stroke-width="2" stroke-linecap="round"/>
+                <path d="M210 80 L110 180" stroke="var(--color-text)" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="110" cy="80" r="10" stroke="var(--color-text)" stroke-width="2"/>
+                <circle cx="210" cy="80" r="10" stroke="var(--color-text)" stroke-width="2"/>
+
+                <!-- Needle & Stitching Thread -->
+                <path d="M60 210 Q 110 260 160 210 T 260 210" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                <!-- Stitched tick marks -->
+                <line x1="80" y1="225" x2="80" y2="235" stroke="var(--color-accent)" stroke-width="2" />
+                <line x1="120" y1="230" x2="120" y2="240" stroke="var(--color-accent)" stroke-width="2" />
+                <line x1="160" y1="205" x2="160" y2="215" stroke="var(--color-accent)" stroke-width="2" />
+                <line x1="200" y1="200" x2="200" y2="210" stroke="var(--color-accent)" stroke-width="2" />
+                <line x1="240" y1="215" x2="240" y2="225" stroke="var(--color-accent)" stroke-width="2" />
+
+                <!-- Spray Paint Splatter Droplets -->
+                <circle cx="245" cy="65" r="4" fill="var(--color-accent)" />
+                <circle cx="255" cy="72" r="2" fill="var(--color-accent)" />
+                <circle cx="238" cy="78" r="1.5" fill="var(--color-accent)" />
+                <circle cx="75" cy="140" r="3" fill="var(--color-accent)" />
+                <circle cx="82" cy="150" r="1.5" fill="var(--color-accent)" />
+              </svg>
+            </div>
+
+            <!-- Card Bottom Barcode & Tags -->
+            <div class="street-card-footer">
+              <div class="barcode-box">
+                <span class="barcode-line w-2"></span>
+                <span class="barcode-line w-4"></span>
+                <span class="barcode-line w-1"></span>
+                <span class="barcode-line w-3"></span>
+                <span class="barcode-line w-2"></span>
+                <span class="barcode-line w-5"></span>
+                <span class="barcode-line w-1"></span>
+                <span class="barcode-line w-3"></span>
+                <span class="barcode-line w-2"></span>
+              </div>
+              <div class="card-badges">
+                <span class="mini-tag">TAILORING</span>
+                <span class="mini-tag">DIGITAL</span>
+                <span class="mini-tag accent">GROWTH</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         ABOUT ME SECTION
+         ----------------------------------------------------------------------- -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-heading">
+          <div class="section-tag">
+            <span class="tag-number">01</span>
+            <span class="tag-label">WHO I AM</span>
+          </div>
+          <h2 class="section-title">
+            About <span class="title-graffiti">Me</span>
+          </h2>
+          <div class="spray-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Manifesto Card / Aesthetic Note -->
+          <div class="about-card-wrapper fade-in">
+            <div class="about-sticker-card">
+              <div class="sticker-header">
+                <span class="tape-badge tape-badge--lime">CREATIVE MANIFESTO</span>
+                <span class="serial-no">#MN-CRAFT-26</span>
+              </div>
+              <div class="sticker-body">
+                <p class="quote-text">
+                  “Every piece of fabric, like every digital canvas, starts with raw potential. True style is born from patience, precision, and the courage to stand out.”
+                </p>
+                <div class="signature-block">
+                  <span class="signature-tag">Milkah N.</span>
+                  <span class="signature-title">Maker &amp; Learner</span>
+                </div>
+              </div>
+              <div class="card-crosshair top-l">+</div>
+              <div class="card-crosshair top-r">+</div>
+              <div class="card-crosshair bot-l">+</div>
+              <div class="card-crosshair bot-r">+</div>
+            </div>
+          </div>
+
+          <!-- Right Column: Editable Biography & Values -->
+          <div class="about-text-content fade-in">
+            <!-- EDITABLE PLACEHOLDER: Feel free to adjust your personal bio here -->
+            <h3 class="about-subheading">
+              Dedicated to craft, driven by curiosity, and building for the future.
+            </h3>
+            
+            <p class="paragraph">
+              I am a creative individual passionate about the tangible artistry of tailoring and the endless possibilities of modern digital technology. For me, garment creation isn't just about assembling fabric — it is a discipline of proportion, detail, structure, and personal expression.
+            </p>
+            
+            <p class="paragraph">
+              Parallel to my interest in fashion and garment design, I am actively immersed in learning digital tools and discovering new ways to innovate online. I believe that being adaptable and curious is the most valuable trait a creator can have today.
+            </p>
+
+            <p class="paragraph">
+              I value <strong>precision over shortcuts</strong>, authentic problem-solving, and continuous self-improvement. Whether taking precise measurements for a stitch or navigating modern digital platforms, I bring focus, care, and a keen eye for aesthetics.
+            </p>
+
+            <!-- Key Attributes / Values List -->
+            <div class="values-grid">
+              <div class="value-item">
+                <span class="value-icon">✂</span>
+                <div class="value-details">
+                  <h4>Meticulous Attention</h4>
+                  <p>A commitment to clean lines, balanced proportions, and careful execution.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <span class="value-icon">⚡</span>
+                <div class="value-details">
+                  <h4>Digital Fluency</h4>
+                  <p>Constantly exploring web tools, digital literacy, and modern online skills.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <span class="value-icon">🌱</span>
+                <div class="value-details">
+                  <h4>Eager to Learn</h4>
+                  <p>Approaching every challenge with humility, curiosity, and an appetite for growth.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <span class="value-icon">🎨</span>
+                <div class="value-details">
+                  <h4>Expressive Vision</h4>
+                  <p>Blending timeless minimalist form with raw, authentic street-culture energy.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         WHAT I DO SECTION
+         ----------------------------------------------------------------------- -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-heading">
+          <div class="section-tag">
+            <span class="tag-number">02</span>
+            <span class="tag-label">FOCUS AREAS</span>
+          </div>
+          <h2 class="section-title">
+            What I <span class="title-graffiti">Do</span>
+          </h2>
+          <p class="section-intro">
+            These represent my core areas of interest, practice, and personal skill development.
+          </p>
+          <div class="spray-line" aria-hidden="true"></div>
+        </div>
+
+        <!-- 3 Distinct Feature Cards -->
+        <div class="cards-grid">
+          
+          <!-- Card 1: Tailoring & Design -->
+          <article class="service-card fade-in">
+            <div class="card-inner">
+              <div class="card-header-row">
+                <span class="stencil-num">01</span>
+                <span class="tape-badge">CRAFT</span>
+              </div>
+              
+              <div class="card-icon-art">
+                <svg viewBox="0 0 64 64" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <!-- Tailor Scissors and Stitch Pattern -->
+                  <circle cx="20" cy="48" r="8" stroke="var(--color-accent)"/>
+                  <circle cx="44" cy="48" r="8" stroke="var(--color-accent)"/>
+                  <line x1="26" y1="42" x2="48" y2="16"/>
+                  <line x1="38" y1="42" x2="16" y2="16"/>
+                  <path d="M12 10 L52 10" stroke-dasharray="3 3"/>
+                </svg>
+              </div>
+
+              <h3 class="card-title">Tailoring &amp; Design</h3>
+              
+              <p class="card-desc">
+                Garment creation rooted in attention to detail, fabric selection, accurate measurements, and bespoke craftsmanship. Focusing on wearable form, silhouette balance, and quality construction.
+              </p>
+
+              <div class="card-tags">
+                <span class="pill-tag">Garment Construction</span>
+                <span class="pill-tag">Pattern Drafting</span>
+                <span class="pill-tag">Bespoke Fit</span>
+                <span class="pill-tag">Fabric Selection</span>
+              </div>
+
+              <div class="card-accent-mark" aria-hidden="true">STITCH // 01</div>
+            </div>
+          </article>
+
+          <!-- Card 2: Digital Skills -->
+          <article class="service-card service-card--featured fade-in">
+            <div class="card-inner">
+              <div class="card-header-row">
+                <span class="stencil-num">02</span>
+                <span class="tape-badge tape-badge--lime">TECH</span>
+              </div>
+              
+              <div class="card-icon-art">
+                <svg viewBox="0 0 64 64" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <!-- Modern Terminal / Digital Canvas -->
+                  <rect x="8" y="10" width="48" height="36" rx="4" stroke="var(--color-accent)"/>
+                  <line x1="8" y1="20" x2="56" y2="20"/>
+                  <line x1="16" y1="15" x2="18" y2="15"/>
+                  <line x1="22" y1="15" x2="24" y2="15"/>
+                  <polyline points="16,30 22,34 16,38"/>
+                  <line x1="26" y1="38" x2="36" y2="38"/>
+                  <line x1="32" y1="46" x2="32" y2="54"/>
+                  <line x1="22" y1="54" x2="42" y2="54"/>
+                </svg>
+              </div>
+
+              <h3 class="card-title">Digital Skills</h3>
+              
+              <p class="card-desc">
+                Engaging with technology, digital workflows, and modern web environments. Exploring creative applications, online communication tools, and methods to bring ideas into the digital space.
+              </p>
+
+              <div class="card-tags">
+                <span class="pill-tag">Digital Tools</span>
+                <span class="pill-tag">Web Fundamentals</span>
+                <span class="pill-tag">Online Collaboration</span>
+                <span class="pill-tag">Digital Literacy</span>
+              </div>
+
+              <div class="card-accent-mark" aria-hidden="true">DIGITAL // 02</div>
+            </div>
+          </article>
+
+          <!-- Card 3: Creative Exploration -->
+          <article class="service-card fade-in">
+            <div class="card-inner">
+              <div class="card-header-row">
+                <span class="stencil-num">03</span>
+                <span class="tape-badge">LAB</span>
+              </div>
+              
+              <div class="card-icon-art">
+                <svg viewBox="0 0 64 64" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <!-- Lightbulb / Spray Can Creativity -->
+                  <path d="M32 10 A 16 16 0 0 0 16 26 C 16 34 22 38 22 44 L 42 44 C 42 38 48 34 48 26 A 16 16 0 0 0 32 10 Z" stroke="var(--color-accent)"/>
+                  <line x1="24" y1="50" x2="40" y2="50"/>
+                  <line x1="28" y1="56" x2="36" y2="56"/>
+                  <!-- Rays -->
+                  <line x1="32" y1="2" x2="32" y2="6"/>
+                  <line x1="10" y1="18" x2="6" y2="16"/>
+                  <line x1="54" y1="18" x2="58" y2="16"/>
+                </svg>
+              </div>
+
+              <h3 class="card-title">Creative Exploration</h3>
+              
+              <p class="card-desc">
+                Experimenting with fresh ideas, fashion sketch concepts, cross-disciplinary projects, and finding innovative answers to everyday design puzzles. Always testing and learning by doing.
+              </p>
+
+              <div class="card-tags">
+                <span class="pill-tag">Design Ideation</span>
+                <span class="pill-tag">Creative Sketching</span>
+                <span class="pill-tag">Problem Solving</span>
+                <span class="pill-tag">Continuous Practice</span>
+              </div>
+
+              <div class="card-accent-mark" aria-hidden="true">EXPLORE // 03</div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         MY WORK / PORTFOLIO SECTION
+         ----------------------------------------------------------------------- -->
+    <section class="section portfolio-section" id="work">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-heading">
+          <div class="section-tag">
+            <span class="tag-number">03</span>
+            <span class="tag-label">SHOWCASE</span>
+          </div>
+          <h2 class="section-title">
+            My <span class="title-graffiti">Work</span>
+          </h2>
+          <p class="section-intro">
+            A curated gallery of projects, garment studies, and creative concepts. Ready to be populated with real work as my portfolio expands.
+          </p>
+          <div class="spray-line" aria-hidden="true"></div>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filter-controls" role="tablist" aria-label="Filter project categories">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+            All Projects <span class="count-badge">6</span>
+          </button>
+          <button class="filter-btn" data-filter="tailoring" role="tab" aria-selected="false">
+            Tailoring &amp; Fashion <span class="count-badge">2</span>
+          </button>
+          <button class="filter-btn" data-filter="digital" role="tab" aria-selected="false">
+            Digital &amp; Tech <span class="count-badge">2</span>
+          </button>
+          <button class="filter-btn" data-filter="concepts" role="tab" aria-selected="false">
+            Concepts &amp; Sketches <span class="count-badge">2</span>
+          </button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- Project 1: Tailoring -->
+          <article class="project-card" data-category="tailoring" tabindex="0">
+            <div class="project-visual">
+              <div class="project-art-placeholder tailoring-bg">
+                <svg viewBox="0 0 200 150" fill="none" class="art-svg">
+                  <!-- Garment silhouette & measurement marks -->
+                  <path d="M60 40 L85 25 L115 25 L140 40 L125 70 L135 130 L65 130 L75 70 Z" stroke="var(--color-accent)" stroke-width="2" fill="rgba(204,255,0,0.04)"/>
+                  <line x1="100" y1="25" x2="100" y2="130" stroke="var(--color-border-bright)" stroke-dasharray="4 3"/>
+                  <line x1="75" y1="70" x2="125" y2="70" stroke="var(--color-accent)" stroke-width="1.5" stroke-dasharray="2 2"/>
+                  <!-- Measurement arrow -->
+                  <path d="M45 40 L45 130" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+                  <text x="30" y="90" fill="var(--color-text-muted)" font-size="10" font-family="monospace">90CM</text>
+                </svg>
+                <span class="project-watermark">CRAFT // 01</span>
+              </div>
+              <span class="project-category-pill">Tailoring &amp; Design</span>
+            </div>
+            
+            <div class="project-info">
+              <h3 class="project-title">Custom Tailored Blazer Study</h3>
+              <p class="project-desc">
+                An exploratory garment project studying lapel structure, dart placement, and sharp, structured shoulder lines for modern daily wear.
+              </p>
+              <div class="project-meta">
+                <span class="meta-tag">Pattern Drafting</span>
+                <span class="meta-tag">Lining Fit</span>
+                <span class="meta-tag">Precision Cut</span>
+              </div>
+              <button class="project-action-btn" data-project-id="1" aria-label="View details for Custom Tailored Blazer Study">
+                <span>View Details</span>
+                <span class="arrow-icon">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 2: Digital -->
+          <article class="project-card" data-category="digital" tabindex="0">
+            <div class="project-visual">
+              <div class="project-art-placeholder digital-bg">
+                <svg viewBox="0 0 200 150" fill="none" class="art-svg">
+                  <!-- Minimalist Web / App Dashboard Wireframe -->
+                  <rect x="30" y="25" width="140" height="100" rx="6" stroke="var(--color-accent)" stroke-width="2" fill="rgba(204,255,0,0.04)"/>
+                  <line x1="30" y1="45" x2="170" y2="45" stroke="var(--color-border-bright)"/>
+                  <circle cx="42" cy="35" r="3" fill="var(--color-accent)"/>
+                  <circle cx="52" cy="35" r="3" fill="rgba(255,255,255,0.3)"/>
+                  <rect x="42" y="60" width="45" height="50" rx="3" stroke="rgba(255,255,255,0.4)" stroke-dasharray="3 2"/>
+                  <rect x="95" y="60" width="65" height="22" rx="3" fill="rgba(204,255,0,0.2)"/>
+                  <rect x="95" y="88" width="65" height="22" rx="3" stroke="rgba(255,255,255,0.2)"/>
+                </svg>
+                <span class="project-watermark">TECH // 02</span>
+              </div>
+              <span class="project-category-pill">Digital &amp; Tech</span>
+            </div>
+            
+            <div class="project-info">
+              <h3 class="project-title">Personal Portfolio Interface</h3>
+              <p class="project-desc">
+                A clean, responsive portfolio created with semantic HTML5, modern CSS architectures, and vanilla JavaScript featuring street-art aesthetic nuances.
+              </p>
+              <div class="project-meta">
+                <span class="meta-tag">HTML5 / CSS3</span>
+                <span class="meta-tag">Vanilla JS</span>
+                <span class="meta-tag">Responsive</span>
+              </div>
+              <button class="project-action-btn" data-project-id="2" aria-label="View details for Personal Portfolio Interface">
+                <span>View Details</span>
+                <span class="arrow-icon">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 3: Concepts -->
+          <article class="project-card" data-category="concepts" tabindex="0">
+            <div class="project-visual">
+              <div class="project-art-placeholder concept-bg">
+                <svg viewBox="0 0 200 150" fill="none" class="art-svg">
+                  <!-- Fashion Sketch Silhouette / Hand-drawn stroke -->
+                  <path d="M100 20 Q 95 35 100 50 Q 75 75 80 130 Q 100 135 120 130 Q 125 75 100 50" stroke="var(--color-accent)" stroke-width="2.2" stroke-linecap="round"/>
+                  <path d="M85 65 C 100 68, 105 68, 115 65" stroke="var(--color-text)" stroke-width="1.8"/>
+                  <!-- Scribble sketch accents -->
+                  <path d="M70 120 L130 125" stroke="var(--color-accent)" stroke-width="1.5" stroke-dasharray="4 4"/>
+                  <circle cx="100" cy="22" r="8" stroke="var(--color-text-muted)" stroke-dasharray="2 2"/>
+                </svg>
+                <span class="project-watermark">SKETCH // 03</span>
+              </div>
+              <span class="project-category-pill">Concepts &amp; Sketches</span>
+            </div>
+            
+            <div class="project-info">
+              <h3 class="project-title">Streetwear Silhouette Series</h3>
+              <p class="project-desc">
+                Conceptual design sketches exploring oversized proportions, asymmetrical pocket utilities, and utilitarian closures for contemporary street fashion.
+              </p>
+              <div class="project-meta">
+                <span class="meta-tag">Fashion Sketch</span>
+                <span class="meta-tag">Ideation</span>
+                <span class="meta-tag">Street Style</span>
+              </div>
+              <button class="project-action-btn" data-project-id="3" aria-label="View details for Streetwear Silhouette Series">
+                <span>View Details</span>
+                <span class="arrow-icon">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 4: Tailoring -->
+          <article class="project-card" data-category="tailoring" tabindex="0">
+            <div class="project-visual">
+              <div class="project-art-placeholder tailoring-bg">
+                <svg viewBox="0 0 200 150" fill="none" class="art-svg">
+                  <!-- Textile weave & seam prototype -->
+                  <rect x="40" y="30" width="120" height="90" rx="4" stroke="var(--color-border-bright)" stroke-width="1.5"/>
+                  <line x1="40" y1="60" x2="160" y2="60" stroke="var(--color-accent)" stroke-dasharray="6 3"/>
+                  <line x1="40" y1="90" x2="160" y2="90" stroke="var(--color-accent)" stroke-dasharray="6 3"/>
+                  <line x1="80" y1="30" x2="80" y2="120" stroke="var(--color-border-bright)"/>
+                  <line x1="120" y1="30" x2="120" y2="120" stroke="var(--color-border-bright)"/>
+                  <circle cx="100" cy="75" r="16" stroke="var(--color-accent)" stroke-width="2"/>
+                </svg>
+                <span class="project-watermark">FABRIC // 04</span>
+              </div>
+              <span class="project-category-pill">Tailoring &amp; Design</span>
+            </div>
+            
+            <div class="project-info">
+              <h3 class="project-title">Fabric Drape &amp; Hemming Prototype</h3>
+              <p class="project-desc">
+                An ongoing exploration in handling varied fabric weights, durable edge finishing, blind-hemming, and structural reinforcement techniques.
+              </p>
+              <div class="project-meta">
+                <span class="meta-tag">Textile Study</span>
+                <span class="meta-tag">Seam Construction</span>
+                <span class="meta-tag">Finishing</span>
+              </div>
+              <button class="project-action-btn" data-project-id="4" aria-label="View details for Fabric Drape & Hemming Prototype">
+                <span>View Details</span>
+                <span class="arrow-icon">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 5: Digital -->
+          <article class="project-card" data-category="digital" tabindex="0">
+            <div class="project-visual">
+              <div class="project-art-placeholder digital-bg">
+                <svg viewBox="0 0 200 150" fill="none" class="art-svg">
+                  <!-- Digital measurement tool layout -->
+                  <rect x="35" y="30" width="130" height="90" rx="6" stroke="var(--color-border-bright)" stroke-width="1.5"/>
+                  <circle cx="65" cy="75" r="22" stroke="var(--color-accent)" stroke-width="2"/>
+                  <line x1="65" y1="53" x2="65" y2="60" stroke="var(--color-accent)" stroke-width="2"/>
+                  <line x1="65" y1="90" x2="65" y2="97" stroke="var(--color-accent)" stroke-width="2"/>
+                  <line x1="100" y1="60" x2="150" y2="60" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+                  <line x1="100" y1="75" x2="140" y2="75" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+                  <line x1="100" y1="90" x2="130" y2="90" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+                </svg>
+                <span class="project-watermark">SYSTEM // 05</span>
+              </div>
+              <span class="project-category-pill">Digital &amp; Tech</span>
+            </div>
+            
+            <div class="project-info">
+              <h3 class="project-title">Tailor’s Measurement Notebook Concept</h3>
+              <p class="project-desc">
+                A digital concept for cataloging client measurement sheets, fabric inventory, and order timelines for modern bespoke tailoring workflows.
+              </p>
+              <div class="project-meta">
+                <span class="meta-tag">UI Wireframe</span>
+                <span class="meta-tag">Workflow Design</span>
+                <span class="meta-tag">Digital Organizing</span>
+              </div>
+              <button class="project-action-btn" data-project-id="5" aria-label="View details for Tailor’s Measurement Notebook Concept">
+                <span>View Details</span>
+                <span class="arrow-icon">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 6: Concepts -->
+          <article class="project-card" data-category="concepts" tabindex="0">
+            <div class="project-visual">
+              <div class="project-art-placeholder concept-bg">
+                <svg viewBox="0 0 200 150" fill="none" class="art-svg">
+                  <!-- Abstract Graffiti / Fashion Typography Graphic -->
+                  <text x="35" y="80" fill="var(--color-accent)" font-size="28" font-family="'Permanent Marker', cursive" letter-spacing="2">CREATE</text>
+                  <path d="M30 95 L 165 92" stroke="var(--color-text)" stroke-width="3" stroke-linecap="round"/>
+                  <circle cx="160" cy="40" r="14" stroke="var(--color-accent)" stroke-dasharray="4 2"/>
+                  <path d="M152 40 L168 40" stroke="var(--color-accent)" stroke-width="2"/>
+                </svg>
+                <span class="project-watermark">GRAPHIC // 06</span>
+              </div>
+              <span class="project-category-pill">Concepts &amp; Sketches</span>
+            </div>
+            
+            <div class="project-info">
+              <h3 class="project-title">Street-Art Graphic Identity Experiment</h3>
+              <p class="project-desc">
+                An identity exploration marrying hand-crafted stencil lettering with minimalist branding for an upcoming bespoke clothing capsule.
+              </p>
+              <div class="project-meta">
+                <span class="meta-tag">Graphic Identity</span>
+                <span class="meta-tag">Street Aesthetics</span>
+                <span class="meta-tag">Capsule Concept</span>
+              </div>
+              <button class="project-action-btn" data-project-id="6" aria-label="View details for Street-Art Graphic Identity Experiment">
+                <span>View Details</span>
+                <span class="arrow-icon">→</span>
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Note to user on how to edit -->
+        <div class="portfolio-custom-note">
+          <p>
+            <span class="tape-badge">CUSTOMIZATION TIP</span>
+            Replace placeholder mockups with your photos, sketches, or project screenshots in <code>index.html</code>.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         MY JOURNEY SECTION
+         ----------------------------------------------------------------------- -->
+    <section class="section journey-section" id="journey">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-heading">
+          <div class="section-tag">
+            <span class="tag-number">04</span>
+            <span class="tag-label">GROWTH PATH</span>
+          </div>
+          <h2 class="section-title">
+            My <span class="title-graffiti">Journey</span>
+          </h2>
+          <p class="section-intro">
+            A continuous path of learning, mastering tangible skills, and expanding into digital horizons.
+          </p>
+          <div class="spray-line" aria-hidden="true"></div>
+        </div>
+
+        <!-- Timeline Container -->
+        <div class="timeline-container">
+          
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item fade-in">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-tag">PHASE 01 // FOUNDATION</span>
+                <span class="timeline-date">The Spark</span>
+              </div>
+              <h3 class="timeline-title">Discovering the Craft of Tailoring</h3>
+              <p class="timeline-desc">
+                Began exploring the art of tailoring, fabric behavior, patterns, and stitching fundamentals. Developed a deep appreciation for the patience, precision, and physical discipline needed to turn two-dimensional cloth into three-dimensional wearable art.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item fade-in">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-tag">PHASE 02 // EXPANSION</span>
+                <span class="timeline-date">Curiosity &amp; Tech</span>
+              </div>
+              <h3 class="timeline-title">Exploring Digital Tools &amp; Online Opportunities</h3>
+              <p class="timeline-desc">
+                Broadened focus to include modern computer literacy, digital workflows, online collaboration platforms, and web technologies. Realized how digital tools empower creators to organize work, reach communities, and showcase talent worldwide.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item fade-in">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-tag">PHASE 03 // SYNTHESIS</span>
+                <span class="timeline-date">Current Focus</span>
+              </div>
+              <h3 class="timeline-title">Merging Physical Craft with Digital Presence</h3>
+              <p class="timeline-desc">
+                Currently refining garment-making skills while developing a strong digital presence. Building projects, documenting the learning journey, and embracing a unique style that balances minimalist structure with bold creative expression.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4 -->
+          <div class="timeline-item fade-in">
+            <div class="timeline-marker">
+              <span class="marker-dot marker-dot--active"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-tag timeline-tag--lime">PHASE 04 // THE HORIZON</span>
+                <span class="timeline-date">Next Chapter</span>
+              </div>
+              <h3 class="timeline-title">Collaboration, Mastery &amp; New Opportunities</h3>
+              <p class="timeline-desc">
+                Seeking collaborations, mentorship, and creative opportunities where craftsmanship, digital enthusiasm, and dedication can make a genuine impact. Ready to take on new creative challenges.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         CONTACT SECTION
+         ----------------------------------------------------------------------- -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-heading">
+          <div class="section-tag">
+            <span class="tag-number">05</span>
+            <span class="tag-label">GET IN TOUCH</span>
+          </div>
+          <h2 class="section-title">
+            Let’s <span class="title-graffiti">Connect</span>
+          </h2>
+          <p class="section-intro">
+            Have a project idea, a tailoring question, or an exciting opportunity? Drop me a message or find me on my channels.
+          </p>
+          <div class="spray-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Channels Column -->
+          <div class="contact-info-block fade-in">
+            <h3 class="contact-lead-text">
+              Always open to creative dialogues, collaborative ideas, and new skills.
+            </h3>
+            
+            <p class="paragraph">
+              Whether you want to discuss custom garment ideas, share digital insights, or just say hello — I would love to hear from you.
+            </p>
+
+            <div class="contact-details-list">
+              
+              <!-- Email Card -->
+              <div class="contact-method-card">
+                <div class="method-icon">✉</div>
+                <div class="method-data">
+                  <span class="method-label">Direct Email</span>
+                  <!-- EDITABLE PLACEHOLDER: Update with your real email address -->
+                  <a href="mailto:milkah.nambafu@example.com" class="method-value" id="email-address">
+                    milkah.nambafu@example.com
+                  </a>
+                </div>
+                <button class="copy-btn" id="copy-email-btn" title="Copy email address" aria-label="Copy email address to clipboard">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span class="copy-tooltip" id="copy-tooltip">Copy</span>
+                </button>
+              </div>
+
+              <!-- WhatsApp Card -->
+              <div class="contact-method-card">
+                <div class="method-icon">💬</div>
+                <div class="method-data">
+                  <span class="method-label">WhatsApp</span>
+                  <!-- EDITABLE PLACEHOLDER: Update with your phone or WhatsApp link -->
+                  <a href="https://wa.me/254700000000" target="_blank" rel="noopener noreferrer" class="method-value">
+                    +254 700 000 000
+                  </a>
+                </div>
+              </div>
+
+              <!-- Location / Timezone Card -->
+              <div class="contact-method-card">
+                <div class="method-icon">📍</div>
+                <div class="method-data">
+                  <span class="method-label">Location &amp; Availability</span>
+                  <span class="method-value">Kenya (GMT+3) • Open to Remote &amp; Local</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Social Links / Editable Links -->
+            <div class="social-channels">
+              <span class="social-title">Find Me Online:</span>
+              <div class="social-pills">
+                <!-- EDITABLE: Replace '#' with your real profile links -->
+                <a href="https://github.com/Milkah-Nambafu" target="_blank" rel="noopener noreferrer" class="social-pill">
+                  <span>GitHub</span>
+                  <span class="pill-arrow">↗</span>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="social-pill">
+                  <span>LinkedIn</span>
+                  <span class="pill-arrow">↗</span>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="social-pill">
+                  <span>Instagram</span>
+                  <span class="pill-arrow">↗</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-wrapper fade-in">
+            <div class="form-container-card">
+              <div class="form-tape"></div>
+              <h3 class="form-title">Send a Quick Message</h3>
+              <p class="form-subtitle">Fill in the fields below and I'll get back to you promptly.</p>
+
+              <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="user-name" class="form-label">Your Name <span class="required-star">*</span></label>
+                  <input type="text" id="user-name" name="name" class="form-input" placeholder="e.g. Alex Morgan" required>
+                  <span class="field-error" id="name-error">Please enter your name.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="user-email" class="form-label">Email Address <span class="required-star">*</span></label>
+                  <input type="email" id="user-email" name="email" class="form-input" placeholder="name@example.com" required>
+                  <span class="field-error" id="email-error">Please enter a valid email address.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="user-subject" class="form-label">Subject / Interest</label>
+                  <select id="user-subject" name="subject" class="form-select">
+                    <option value="Tailoring Collaboration">Tailoring &amp; Garment Project</option>
+                    <option value="Digital Collaboration">Digital Project / Opportunity</option>
+                    <option value="General Inquiry">General Creative Inquiry</option>
+                    <option value="Just Saying Hello">Just Saying Hello</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="user-message" class="form-label">Your Message <span class="required-star">*</span></label>
+                  <textarea id="user-message" name="message" rows="4" class="form-textarea" placeholder="Tell me about your idea or project..." required></textarea>
+                  <span class="field-error" id="message-error">Please write a short message.</span>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
+                  <span>Send Message</span>
+                  <svg class="btn-arrow" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+
+                <!-- Form Status Alert -->
+                <div class="form-status" id="form-status" role="alert" aria-live="polite"></div>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       PROJECT DETAILS MODAL (ACCESSIBLE POPUP)
+       ========================================================================= -->
+  <div class="project-modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close project preview window">
+        ✕
+      </button>
+
+      <div class="modal-content">
+        <div class="modal-badge-row">
+          <span class="tape-badge tape-badge--lime" id="modal-category">CATEGORY</span>
+          <span class="modal-serial" id="modal-id">REF // 00</span>
+        </div>
+        
+        <h2 class="modal-title" id="modal-title">Project Title</h2>
+        
+        <div class="modal-art-view" id="modal-art-view">
+          <!-- Dynamic Project Graphic Injected Here -->
+        </div>
+
+        <p class="modal-description" id="modal-description">
+          Detailed project description will display here.
+        </p>
+
+        <div class="modal-meta-box">
+          <h4 class="modal-meta-title">Key Elements &amp; Skills:</h4>
+          <div class="modal-tags" id="modal-tags">
+            <!-- Dynamic Tags Injected Here -->
+          </div>
+        </div>
+
+        <div class="modal-footer-note">
+          <p>
+            ℹ️ <em>You can replace this placeholder with real project photos and links in <code>script.js</code>.</em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      
+      <div class="footer-brand">
+        <span class="footer-tag-name">MILKAH NAMBAFU</span>
+        <p class="footer-tagline">
+          Creativity in every stitch. Ideas without limits.
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">What I Do</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> Milkah Nambafu. Built with precision &amp; vanilla code. All rights reserved.
+        </p>
+        <div class="street-signature">
+          <span>MINIMALIST</span>
+          <span class="separator">×</span>
+          <span class="graffiti-glow">GRAFFITI</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       BACK TO TOP BUTTON
+       ========================================================================= -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top of page" title="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Notification Toast Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
